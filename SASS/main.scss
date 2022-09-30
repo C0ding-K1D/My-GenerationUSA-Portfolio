@@ -1,0 +1,17 @@
+$primary: #e85a4f;
+$secondary: #e98074;
+$light: #eae7dc;
+$dark: #333;
+
+// TWO IMPORTS NEEDED FOR CUSTOM THEME FUNCTIONS MUST COME BEFORE VARIABLES IMPORT
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+$custom-theme-colors: (
+  "altsecondary": #8e8d8a,
+  "altlight": #d8c3a5,
+);
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
